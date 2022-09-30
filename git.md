@@ -1,4 +1,4 @@
-**Git**
+# Git
 ## git init
 ## git add .
     將子目錄裡的所有檔案註冊到索引裡
