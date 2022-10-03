@@ -99,21 +99,23 @@ github repo：存放 project 的地方
     查看電腦上的branch
     git branch -a 查看所有branch(include remote)
 
+---
+
 ## 新 branch 整合回 master (在 github 上 merge)
+
+## Pull request
 
 ---
 
-# Pull request
+### 如果有衝突-不能 automatically merge
 
-## 如果有衝突-不能 automatically merge
+### git switch master (東西需做完)
 
-## git switch master (東西需做完)
+### git pull (origin)
 
-## git pull (origin)
+### git switch 新 branch
 
-## git switch 新 branch
-
-## git rebase <要 rebase 到哪個分支>
+### git rebase <要 rebase 到哪個分支>
 
     把目前分支的起始點移到最新進度
 
@@ -136,13 +138,13 @@ github repo：存放 project 的地方
 
 ---
 
-# 新 branch 整合回 master (在電腦上 merge)
+## 新 branch 整合回 master (在電腦上 merge)
 
-## 新 branch commit 完
+### 新 branch commit 完
 
-## 切回 master
+### 切回 master
 
-## git merge <要整併的分支>
+### git merge <要整併的分支>
 
     把目前分支整併到另一分支
     做完後現在的分支會消失
