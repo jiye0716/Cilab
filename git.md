@@ -3,88 +3,109 @@
 - 版本控制系統
 - 共同開發
 
-github repo：存放 project 的地方
+### github repo：存放 project 的地方
 
-## git config --global user.name "xxxxx"
+---
 
-## git config --global user.email xxxxxxx@example.com
+### git config --global user.name "xxxxx"
 
-## git init
+### git config --global user.email xxxxxxx@example.com
 
-    (initial)
-    初始化repo
+### git init
 
-## git pull
+    (initial)初始化repo
+
+### git pull
 
     從遠端repo拉取回本地（同步）
 
-## git clone
+### git clone
 
     從遠端repo複製資料
 
-## git status
+### git status
 
     顯示修改檔案清單
     -s：僅會顯示已修改的檔案名稱
 
-## git add .
+### git add .
 
     git add <檔案名稱>
     將子目錄裡的所有檔案註冊到索引裡
 
-## git commit
+### git commit
 
     -a : 有修改的檔案(不包括新增的檔案)，將其加入索引並提交。
     -m : 提交訊息
 
-## git push
+### git push
 
     從本地推送到遠端
     git push origin master 本地master分支推一份到origin節點
     git push -u origin master 把預設remote都設成origin
 
-## git reset -- <file name>
+### git reset -- <file name>
 
     把add的檔案unstage回去
 
-## git checkout -- <file>
+### git checkout -- <file>
 
     把檔案回到上次commit的狀態
 
-## git reset --soft HEAD~1
+### git reset --soft HEAD~1
 
     往前退一個commit(保留修改的部分）
 
-## git rm
+### git rm
 
     remove
 
-## git remote add <自訂名稱> <網址>
+### git remote add <自訂名稱> <網址>
 
     把這個網址加到你的remote
     git remote add origin xxx.github
 
-## git remote
+### git remote
 
     查看所有remote
 
 ---
 
-# 設定 ssh 連線
+## 設定 ssh 連線
 
-## ssh -keygen
+### ssh -keygen
 
     產生公鑰與私鑰
 
-## cd /c/Users/
+### cd /c/Users/
 
-## ls -al
+### ls -al
 
     顯示目錄下物件
 
-## cat id_rsa.pub
+### cat id_rsa.pub
 
     顯示內容
+
+---
+
+## 建立電腦端 New repo
+
+### makir 建立新資料夾
+
+    code . 開啟vscode
+
+### git init 初始化 repo
+
+### git add .
+
+### git commit(電腦)
+
+### 建立 Github new repo
+
+### git remote add https://github.com/xxx
+
+### git push 推到 github
 
 ---
 
@@ -101,7 +122,21 @@ github repo：存放 project 的地方
 
 ---
 
-## 新 branch 整合回 master (在 github 上 merge)
+## Create new branch
+
+### makir
+
+### git clone xxx.com
+
+### git checkout -b <branch name>
+
+### git branch 查看電腦上的 branch
+
+    git branch -a (include remote)
+
+---
+
+## branch 整合回 master ( github 上 merge)
 
 ## Pull request
 
@@ -119,26 +154,28 @@ github repo：存放 project 的地方
 
     把目前分支的起始點移到最新進度
 
-## 解衝突
+### 解衝突
 
-## git rebase --continue
+### git rebase --continue
 
     解完衝突繼續Rebase
 
-## git push -f
+### git push -f
 
     強制push (改變歷史)
     不要在主要master
 
-## merge pull request (github)
+### merge pull request (github)
 
-## git branch -d <branch name>
+### git branch -d <branch name>
 
     刪除電腦上的branch
 
 ---
 
 ## 新 branch 整合回 master (在電腦上 merge)
+
+---
 
 ### 新 branch commit 完
 
@@ -149,14 +186,14 @@ github repo：存放 project 的地方
     把目前分支整併到另一分支
     做完後現在的分支會消失
 
-## 如果原本的分支有新版本 merge 完 push 會出現衝突
+### 如果原本的分支有新版本 merge 完 push 會出現衝突
 
-## git pull
+### git pull
 
-## 解決 confilct
+### 解決 confilct
 
-## git commit
+### git commit
 
-## git push
+### git push
 
 ---
